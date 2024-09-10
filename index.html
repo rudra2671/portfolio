@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rudra Pratap - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0;
+        }
+
+        main {
+            flex: 1;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #555;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #subhead { 
+            font-size: 1rem;
+            color: #f4f4f4;
+        }
+
+        ul, p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        section:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rudra Pratap Singh Shaktawat </h1>
+        <p id="subhead">BCA Student | Full Stack Developer | Amity University (AIIT)</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am Rudra Pratap, a student of BCA at Amity University, AIIT department.
+                I have a passion for full stack development and music. I am always looking
+                to learn new things and improve my skills in web development.
+                I have completed a 45-day internship in web development, gaining hands-on
+                experience in building web applications. I have worked on a clone of AirBNB
+                using the MERN stack. My focus is on delivering clean, efficient code and
+                creating great user experiences. I believe in continuous learning and
+                innovation.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Internship in Web Development (45 days)</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Clone of AirBNB (MERN Stack)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:prataprudra025@gmail.com">prataprudra025@gmail.com</a></p>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <form>
+                <h3>I can read:</h3>
+                <label><input type="checkbox" checked disabled> English</label><br>
+                <label><input type="checkbox" checked disabled> Hindi</label><br>
+                <label><input type="checkbox" checked disabled> German</label><br>
+
+                <h3>I can write:</h3>
+                <label><input type="checkbox" checked disabled> English</label><br>
+                <label><input type="checkbox" checked disabled> Hindi</label><br>
+
+                <h3>I can speak:</h3>
+                <label><input type="checkbox" checked disabled> English</label><br>
+                <label><input type="checkbox" checked disabled> Hindi</label><br>
+                <label><input type="checkbox" checked disabled> German</label><br>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Rudra Pratap</p>
+    </footer>
+</body>
+</html>
